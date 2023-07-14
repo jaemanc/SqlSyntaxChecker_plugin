@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SqlSyntaxChecker">
+    <output-path>$PROJECT_DIR$/out/artifacts/SqlSyntaxChecker</output-path>
+    <root id="archive" name="SqlSyntaxChecker.jar" />
+  </artifact>
+</component>
