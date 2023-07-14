@@ -1,0 +1,39 @@
+query 1 :
+
+SELECT
+      A.ID,
+      A.NAME,
+      B.ADDRESS,
+      A.NVL(GRADE, ""),
+      CASE WHEN A.GRADE >= 4 THEN "Y"
+      	   ELSE "N" END AS SCHOLARSHIP_CANDIDATE,
+      C.PROFESSOR,
+      A.PHONE,
+      A.COMMENT
+  FROM
+      STUDENT A,
+      CAMPUS B,
+      PROFESSOR C,
+      LECTURE D,
+      MAJOR E
+  WHERE
+    A.PROFESSOR_ID = C.ID
+    AND A.SCHOOL_ID = B.ID
+    AND A.MAJOR_ID = D.ID
+    AND B.CAMPUS_CODE = "COE"
+    AND A.GRADE >= 3
+    AND A.MAJOR_ID = E.ID
+    AND E.STUDENT_COUNT = (
+                           SELECT
+                                  MAX(STUDENT_COUNT)
+                           FROM
+                           	  MAJOR A, CAMPUS B
+                           WHERE
+                           	  A.CAMPUS_ID = B.ID
+                             	  AND B.CAMPUS_CODE = "COE"
+                        )
+  ORDER BY
+      A.MAJOR_ID,
+      A.NAME;
+
+

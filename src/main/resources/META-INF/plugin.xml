@@ -1,20 +1,20 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
-    <id>com.org.intellijplugin</id>
+    <id>com.org.sqlsyntaxchecker</id>
 
     <!-- Public plugin name should be written in Title Case.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
-    <name>Intellijplugin</name>
+    <name>SQL_Syntax_Checker</name>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
-    <vendor email="jaemanc93@gmail.com" url="jaemanc93@gmail.com">jaemanCC</vendor>
+    <vendor email="jaemanc93@gmail.com" url="jaemanc93@gmail.com">jaemanc</vendor>
 
     <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
          Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
     <description><![CDATA[
-    SQL GRAMMAR SYNTAX CHECK PLUGINS. PLEASE HELP ME!!! GOD!!
+        intellij plug-in for checking grammar for simple query statements.
   ]]></description>
 
     <!-- Product and plugin compatibility requirements.

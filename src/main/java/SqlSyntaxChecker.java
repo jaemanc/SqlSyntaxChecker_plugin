@@ -42,3 +42,7 @@ public class SqlSyntaxChecker extends AnAction {
         }
     }
 }
+
+
+
+
