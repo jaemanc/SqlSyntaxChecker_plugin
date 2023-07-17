@@ -1,5 +1,11 @@
 # SqlSyntaxChecker_plugin
 
+
+WHERE ? 
+https://plugins.jetbrains.com/plugin/22258-sql-syntax-checker
+
+
+
 intellij plug-in for checking grammar for simple query statements.
 
 
